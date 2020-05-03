@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*
+CIS 155 Web Dev 1 - V1 project
+Author: Madison Hennings
+Date:   5.1.2020
+
+Filename: styles.css
+*/
+/*M2LO4 Demonstrate external, embedded, and inline styles*/
+
+/* Structural Styles */
+/*M2LO3 Demonstrate style precedence and inheritance in CSS*/
+
+html {
+    /*M2LO15 Apply colors using CSS */
+    color: rgb(0, 0, 0);
+    color: hsl(0, 0, 0);
+    /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS */
+}
+
+
+body {
+    /*M2LO15 Apply colors using CSS */
+    background-color: azure;
+
+}
+/*M2LO3 Demonstrate inheritance in CSS*/
+h1 {
+    text-align: center;
+}
+
+
+/*M2LO7 Demonstrate a CSS attribute selector other than class or id */
+.index-h1 {
+    /*M2LO13 Demonstrate how CSS can change presentation of textual elements )*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0084bf;
+}
+/* Navigation Styles */
+
+/*M2LO6  Demonstrate a CSS id and a CSS class selector*/
+#nav{
+    /*M2LO12 Demonstrate how CSS can change presentation of page elements*/
+    background-color: #0084bf;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+
+}
+/*•M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
+nav :visited {
+    color: crimson;
+}
+
+
+/*M2LO5 Demonstrate contextual selectors */
+nav>ul>li {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+}
+/* Section Styles */
+/* Definition List Styles */
