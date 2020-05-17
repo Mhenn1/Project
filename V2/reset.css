@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+CIS 155 Web Dev 1 - V1 project
+Author: Madison Hennings
+Date:   5.16.2020
+
+Filename: reset.css
+*/
+
+/* Typographic Styles */
+/*M3LO1 Demonstrate the use of a CSS reset style sheet*/
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   /* M3LO11 Demonstrate -prefix- style */
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+ 
+
+ 
+ nav ul {
+    list-style: none;
+    list-style-image: none;
+ }
+ 
+ nav a {
+    text-decoration: none;
+ }
+ 
+ body {
+     line-height: 1;
+ }
