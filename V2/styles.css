@@ -15,7 +15,7 @@ Filename: styles.css
 html {
     /*M2LO15 Apply colors using CSS */
     color: rgb(0, 0, 0);
-    color: hsl(0, 0, 1%);
+    color: hsl(0, 0%, 0%);
     /* M4LO2 Demonstrate the use of background images (CSS) */
     /*M4LO4 Demonstrate the use of gradients (CSS)*/
     background: linear-gradient(lightgray, white), url(background.png)
