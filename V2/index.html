@@ -5,9 +5,9 @@
 <html lang="en">
     <head>
         <!--
-   CIS 155 Web Dev 1 - V1 project
+   CIS 155 Web Dev 1 - V2 project
    Author: Madison Hennings
-   Date:   5.2.2020
+   Date:   5.17.2020
    
    Filename: index.html
    -->
@@ -20,7 +20,11 @@
     </Head>
     <body>
       <header>
-        <img src="Sound_Studios_Logo.png" alt="Logo" />
+        <img src="Sound_Studios_Logo.png" alt="Logo" usemap="#home"/>
+        <!-- M4LO7 Demonstrate the use of image maps, including determining x and y values (HTML)-->
+        <map name="home">
+          <area shape="default" coords="0, 0, 100%, 100%;" href="index.html" alt="Home">
+        </map>
             <nav class="horizontal">
                 <!--M1LO12 Create navigation using unordered lists (HTML)-->
               <ul>
@@ -40,12 +44,13 @@
        <Figure>
          <!--M1LO9 Demonstrate the use of inline images (HTML)-->
         <img src="img_7857.jpg" alt="Tech and art" />
+        
         <figcaption>A Surface running VSCode next to a violin signifying the coming together of technology and the arts.</figcaption>
        </Figure>
         
         <p>
             <!--M1LO13 Demonstrate using 3 types of hyperlinks-->
-            Welcome to my site!  This is the V1 site I am designing as a part of my CIS 155 Web Development class here at <a href="https://www.olympic.edu">Olympic College</a>.  
+            Welcome to my site!  This is the V2 site I am designing as a part of my CIS 155 Web Development class here at <a href="https://www.olympic.edu">Olympic College</a>.  
             I will be updating this with more content and improving the design in the coming weeks,
              so stay tuned!
         </p>    
