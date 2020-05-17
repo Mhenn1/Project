@@ -15,7 +15,7 @@ Filename: styles.css
 html {
     /*M2LO15 Apply colors using CSS */
     color: rgb(0, 0, 0);
-    color: hsl(0, 0, 0%);
+    color: hsl(0, 0, 1%);
     /* M4LO2 Demonstrate the use of background images (CSS) */
     /*M4LO4 Demonstrate the use of gradients (CSS)*/
     background: linear-gradient(lightgray, white), url(background.png)
@@ -129,7 +129,6 @@ header nav.horizontal {
     box-sizing: border-box;
     display: block;
     text-align: center;
-    float: center;
     clear: right;
     
     
@@ -173,7 +172,7 @@ body > header:active, body > header a:hover {
     background-color: rgb(51, 51, 151);
     opacity: 90%;
     bottom: 0;
-    right: 20;
+    left: 25px;
     width: 100px;
     padding: 25px;
     border-radius: 15% 15% 0% 0%;
