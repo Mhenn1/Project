@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--•	M1LO6 Demonstrate the use of basic HTML tags to create a
+     simple Web page (HTML, this item should be specified once, 
+     describing how the file it is in meets this outcome)-->
+<html lang="en">
+    <head>
+        <!--
+   CIS 155 Web Dev 1 - V2 project
+   Author: Madison Hennings
+   Date:   5.16.2020
+   
+   Filename: about.html
+   -->
+        <meta charset="UTF-8">
+        <title> Sound Studios &dash; About</title>
+        <link href="styles.css" rel="stylesheet" />
+        <!--•	M1LO8 Demonstrate the use of external style sheets 
+            (HTML, note the external style sheet must exist and contain CSS)-->
+    </Head>
+    <body>
+      <header>
+        <img src="Sound_Studios_Logo.png" alt="Logo" usemap="#home"/>
+        <map name="home">
+          <area shape="default" href="index.html" alt="Home">
+        </map>
+            <nav class="horizontal">
+                <!--M1LO12 Create navigation using unordered lists (HTML)-->
+              <ul>
+                <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+      </header>  
+          
+          
+    <article>
+
+      <!--M6LO3 Demonstrate how to create a table-->
+      <H1 class="index-h1">About this Site</H1>  
+        
+   
+            
+    <p>
+
+      <table>
+        <thead>
+          <tr>
+            <!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table-->
+           <th colspan="2">Version History</th>
+          
+          </tr>
+          
+        </thead>
+   
+         
+   
+         <tbody>
+           <tr>
+              <td>V1</td>
+              <td><ul>
+                <li>Created HTML and CSS pages</li>
+                <li>Created header and footer</li>
+                <li>Added image on homepage</li>
+                <li>Added stylings in CSS</li>
+            </ul></td>
+           </tr>
+           <tr>
+            <td>V2</td>
+            <td><ul>
+              <li>Created Art page</li>
+              <li>Created Technology page</li>
+              <li>Updated header and footer CSS</li>
+              <li>Added site media </li>
+              <li>Added a lot of new CSS</li>
+          </ul></td>
+         </tr>
+         <tr>
+          <td>V3</td>
+          <td><ul>
+            <li>Added media queries for small screens</li>
+            <li>Created pull-down nav menu for mobile use</li>
+            <li>Refined nav flexboxes</li>
+            <li>Put changelog into table (right here!) </li>
+            <li>Bug fixes and improvements</li>
+        </ul></td>
+       </tr>
+       <tr>
+        <td>V1</td>
+        <td>Changes</td>
+     </tr>
+         </tbody>
+   
+      </table>   
+        
+    </p>
+    <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external -->
+    <div class="gototop">Go to <a href="#horizontal">top</a></div>
+    
+    
+    </article>
+    <footer>&copy; 2020 Madison Hennings</footer>
+    </body>    
+</html>  

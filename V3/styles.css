@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+/*
+CIS 155 Web Dev 1 - V1 project
+Author: Madison Hennings
+Date:   5.1.2020
+
+Filename: styles.css
+*/
+/*M2LO4 Demonstrate external, embedded, and inline styles*/
+
+/* Structural Styles */
+/*M2LO3 Demonstrate style precedence and inheritance in CSS*/
+
+html {
+    /*M2LO15 Apply colors using CSS */
+    color: rgb(0, 0, 0);
+    color: hsl(0, 0%, 0%);
+    /* M4LO2 Demonstrate the use of background images (CSS) */
+    /*M4LO4 Demonstrate the use of gradients (CSS)*/
+    background: linear-gradient(lightgray, white);
+    width: 100% ;
+
+    /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS */
+}
+
+
+body {
+    /*M2LO15 Apply colors using CSS */
+    background: white;
+   
+   
+    
+
+    font-size: 1em;
+    float: none;
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 800px;
+
+}
+/* M3LO8B Demonstrate relative positioning */
+body > article > img { 
+    position: relative;
+    padding: 15px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; }
+
+/* M4LO1 Demonstrate the use of figure boxes (HTML) */
+figure {
+        margin: 20px auto 0px;
+        width: 80%;
+        }
+
+figure img {
+    display: block;
+    width: 100%;
+}
+    
+figure figcaption {
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: #0084bf;
+ }
+
+ /*M3LO3 Demonstrate a clearing floats*/
+ header::after {
+     clear: both;
+     content: "";
+     display: table;
+ }
+
+/*M2LO3 Demonstrate inheritance in CSS*/
+h1 {
+    text-align: center;
+}
+
+
+/*M2LO7 Demonstrate a CSS attribute selector other than class or id */
+.index-h1 {
+    /*M2LO13 Demonstrate how CSS can change presentation of textual elements )*/
+    /*M4LO5 Demonstrate the use of text or box shadowing*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    padding: 15px;
+    text-shadow: lightgray 4px 6px 5px;
+
+    }
+
+/* M3LO8A Demonstrate absolute positioning */
+footer {
+    position: absolute;
+    clear: both; 
+    position: relative;
+    height: 3em; 
+    margin-top: 3em;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #0084bf;
+    
+}
+/* Navigation Styles */
+
+.dropbtn {
+     visibility: hidden;
+}
+/* M5LO5 Demonstrate the use of flexboxes on a web page*/
+header nav.horizontal li {
+    background-color: #0084bf;
+    display: block;
+    font-family: Tahoma, Geneva, sans-serif;
+    /* M3LO2 Demonstrate floating elements */
+    float: left;
+    width:15%;
+ }
+
+/*M2LO6  Demonstrate a CSS id and a CSS class selector*/
+header nav.horizontal {
+    /*M2LO12 Demonstrate how CSS can change presentation of page elements*/
+
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    clear: right;
+    /*M5LO6 Demonstrate use of properties of flexbox items */
+    justify-content: center
+    
+
+}
+
+header nav.horizontal li a {
+    color: white;
+    display: block;
+    font-size: 1em;
+    height: 100px; 
+    letter-spacing: 0.1em;   
+    line-height: 100px; 
+    text-align: center;     
+    width: 100%;
+    flex-wrap: wrap
+ }
+
+header nav.horizontal li a:visited, header nav.horizontal li a:link {
+	color: white;
+}
+
+body > header:active, body > header a:hover {
+    background-color: rgb(51, 51, 151);
+ }
+
+ header img {
+    max-height: 100px;
+    float: left;
+    display: block;
+    margin: 5px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+ 
+ /* M3LO9 Demonstrate fixed, static, or inherited positioning */
+ /* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
+ /* M4LO4 Demonstrate the use of gradients (CSS)*/
+ /* M3LO8A Demonstrate absolute positioning */
+ div.gototop {
+    position: fixed;
+    background-color:#0084bf;
+    ;
+    opacity: 90%;
+    bottom: 0;
+    left: 25px;
+    width: 100px;
+    padding: 25px;
+    border-radius: 15% 15% 0% 0%;
+    z-index: 1;
+  }
+
+
+/*•M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector */
+/*nav :visited {
+    color: crimson;
+}
+*/
+
+/*M2LO5 Demonstrate contextual selectors */
+nav>ul>li {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+}
+/* Section Styles */
+
+
+/* M3LO6 Demonstrate formatting a grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: lightgray;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+   
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .grid-item > img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; }
+
+/*M4LO8 Demonstrate the use of transformations for 2D or 3D images*/
+    .grid-item > img:hover {
+        transform: scale(2);
+        transition: transform .2s;
+    }
+
+    blockquote {
+        overflow: auto;
+        position: relative;
+        height: 500px;
+        width: 75%;
+        padding: 25px;
+    }
+
+    /* M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS) */
+    
+    /**/
+    .art_transform {
+        opacity: 50%;
+        width: 25%;
+        height: 25%;
+        vertical-align: middle;
+    }
+
+
+    /* Table Header Styles */
+
+    /* M6LO7 Demonstrate how to format a table with CSS */
+    th, td{
+        border: 3px solid black;
+        line-height: 1.4em;
+        padding: 8px;
+
+/* Definition List Styles */
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+
+/* M5LO3 Use media queries to format a page differently for phones vs. PCs.*/
+@media only screen and (max-width: 640px) {
+
+    body {
+        background: black;
+        font-size: 1em;
+        float: none;
+        margin: 0px auto;
+        width: 100%;
+        max-width 640px;
+        min-width: 0px;
+    }
+
+    header nav.horizontal {
+        /*M2LO12 Demonstrate how CSS can change presentation of page elements*/
+    
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+        clear: right;
+        
+        
+    
+    }
+
+    header nav.horizontal li {
+        background-color: #0084bf;
+        display: block;
+        font-family: Tahoma, Geneva, sans-serif;
+        /* M3LO2 Demonstrate floating elements */
+        float: inline-start;
+        width:100%;
+     }
+   
+    .dropbtn {
+        background-color: #0084bf;
+        color: white;
+        padding: 16px;
+        font-size: 1.5em;
+        height: 100px; 
+        border: none;
+        cursor: pointer;
+        text-align: center;     
+        width: 100%;
+        letter-spacing: 0.1em;  
+        visibility: visible;
+      }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      /* M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas)*/
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: #755f5f;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+    .dropdown-content a:hover {background-color: rgb(51, 51, 151)}
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+    .dropdown:hover .dropbtn {
+        background-color: rgb(51, 51, 151);
+    }  
+}
