@@ -256,7 +256,7 @@ nav>ul>li {
     th, td{
         border: 3px solid black;
         line-height: 1.4em;
-        padding: 8px;
+        padding: 8px;}
 
 /* Definition List Styles */
 
@@ -269,12 +269,12 @@ nav>ul>li {
 @media only screen and (max-width: 640px) {
 
     body {
-        background: black;
+        background: white;
         font-size: 1em;
         float: none;
         margin: 0px auto;
         width: 100%;
-        max-width 640px;
+        max-width: 640px;
         min-width: 0px;
     }
 
